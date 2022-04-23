@@ -1,0 +1,90 @@
+*{margin: 0;padding: 0 4px;box-sizing: border-box; text-decoration: none; color: black;}
+html{overflow-y: hidden;}
+body{
+    display: flex;
+    background: linear-gradient(90deg, rgba(241, 118, 51, 0.6),hwb(31 1% 57% / 0.6)),
+                url('/img/bg.png') no-repeat center center;
+    background-size: cover;
+    overflow-y: scroll;
+
+    height: 100vh;
+}
+.navbar a:hover{color: white;}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    gap: 5%;
+    height: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: x-large;
+    overflow: hidden;
+}
+.logo{background-color: red; min-height: 100%; background: url('/img/logo.png') no-repeat center center /contain;width: 300px; }
+.navbar div:nth-of-type(3){margin-left: auto;}
+.navbar div:nth-of-type(5){margin-right: 15px;}
+    .ham:hover {
+        cursor: pointer;
+    }    
+    .hamburger{
+        position: relative;
+        background-color:black;
+        width:25px;
+        height: 4px;
+        border-radius: 2px;
+    }
+    .hamburger:after{
+        content:'';
+        width:25px;
+        height:4px;
+        border-radius: 2px;
+        top: -7px;
+        left: 0;
+        position: absolute;
+        background-color: black;
+    }
+    .hamburger:before{
+        content:'';
+        width:25px;
+        height:4px;
+        left: 0;
+        background-color: black;
+        border-radius: 2px;
+        top: 6px;
+        position: absolute;
+    }
+.navbar .navitems:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(42, 38, 38);
+    border-radius: 5px;
+}
+.search{display: flex; border: 3px rgb(101, 26, 26) solid; background-color: inherit; border-radius: 10px; padding: 5px;flex-grow: 0.2;}
+.search_icon{ border: 0;  border: 0; background-color: inherit;}
+.search_icon:hover{cursor: pointer;padding: 5px}
+.search_input:hover{padding: 5px;width:35vw;}
+.search_input{flex-grow: 1;border: 0; background-color: inherit;}
+.menu{
+    width:80vw; position: absolute; display: none;
+    background-color: rgb(101, 51, 12);
+    justify-content: flex-start;
+}
+.ham:hover .menu{
+    display: block;
+}
+
+
+@media screen and (min-width:1100px){ 
+    .navbar{justify-content: center;
+        margin: 0px 25px;}
+    .hamburger{display: none;}
+    .ham::before{content: 'Courses';}
+    
+}
+@media screen and (min-width:1200px) {
+    .navbar{padding: 0 150px;}
+    
+}
