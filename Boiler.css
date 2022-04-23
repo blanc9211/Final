@@ -2,11 +2,11 @@
 html{overflow-y: hidden;}
 body{
     display: flex;
-    background: linear-gradient(90deg, rgba(241, 118, 51, 0.6),hwb(31 1% 57% / 0.6)),
+    background: linear-gradient(to right, rgba(255, 251, 214, 0.6) , rgb(178, 10, 44,0.6)),
                 url('/img/bg.png') no-repeat center center;
     background-size: cover;
     overflow-y: scroll;
-
+    overflow: hidden;
     height: 100vh;
 }
 .navbar a:hover{color: white;}
